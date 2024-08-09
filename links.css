@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-family: "Poppins";
+    background-color:rgb(251, 245, 237);
+    overflow-x: hidden;
+}
+::selection {
+    color:rgb(255, 255, 255);
+    background-color: rgba(24, 1, 87, 0.469);
+}
+#back {
+    position: fixed;
+    padding-left: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    padding-top:9px;
+    padding-bottom:3px;
+    padding-right: 6px;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 40px;
+    transition: 2s;
+}
+#back:hover{
+    background-color: white;
+}
+#backImg {
+    height:30px;
+    width: 30px;
+    margin-top: -3px;
+}
+#topText {
+    color: black;
+    background-color: rgb(222, 218, 218);
+    text-align: center;
+    padding:40px;
+    border-radius: 20px;
+    user-select: none;
+    cursor:help;
+}
+#links {
+    background-color: rgb(213, 131, 131);
+    height: 240px;
+    border-radius: 8px;
+    padding:20px;
+}
+#link1 {
+    background-color: white;
+    height:20px;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#link1:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+#princetonreviewImg {
+    height:40px;
+    position:relative;
+    left:90%;
+    margin-top: -10px;
+}
+#linkText1 {
+    color:black;
+    margin-top: -40px;
+}
+#link2 {
+    background-color:rgb(252, 249, 205);
+    height:20px;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#link2:hover {
+    background-color:beige;
+    transition: 0.5s;
+}
+#appilyImg {
+    height:40px;
+    position:relative;
+    left:80%;
+    margin-top: -10px;
+}
+#linkText2 {
+    color:black;
+    margin-top: -40px;
+}
+#link3 {
+    background-color:rgb(255, 255, 255);
+    height:20px;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#link3:hover {
+    background-color:beige;
+    transition: 0.5s;
+}
+#logo {
+    height:40px;
+    position:relative;
+    left:90%;
+    margin-top: -10px;
+    border:1px black solid;
+    border-radius: 20px;
+}
+#linkText3 {
+    color:black;
+    margin-top: -40px;
+}
+#container {
+    background-color: blanchedalmond;
+    height:60px;
+    padding-bottom:20px;
+    padding-top:5px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#ownBookmark {
+    border-radius: 10px;
+    height:20px;
+    border:2px solid black;
+    padding:10px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s;
+    width:300px;
+    position:relative;
+    left:20%;
+}
+#ownBookmark:hover {
+    border-radius: 10px;
+    height:20px;
+    border:2px solid rgb(16, 13, 43);
+    background-color: whitesmoke;
+    padding:10px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#url {
+    margin-top: -58px;
+    position:relative;
+    left:0%;
+    width:10px;
+}
+#urlInput {
+    height:20px;
+}
+.linkTheir {
+    margin-top: 20px;
+    background-color:rgb(236, 215, 215);
+    height:20px;
+    padding: 35px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.linkTheir:hover {
+    background-color:rgb(206, 235, 243);
+    transition: 0.5s;
+}
+#open {
+    z-index: 30;
+    height:101vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    animation: transition2 0.3s forwards;
+}
+@keyframes transition2 {
+    0% {
+        opacity: 1;
+        transform: rotateX(-10deg);
+        transition: ease-in;
+    }
+    50% {
+        opacity: 0.5;
+        transition: ease-in;
+    }
+    100% {
+        opacity:0;
+        transform:rotateX(0);
+        background-color: rgb(0, 0, 0);
+        transition: ease-in;
+        z-index: -1;
+    }
+}
+#underneath {
+    background-color: rgb(213, 131, 131);
+    max-height: max-content;
+    margin-left: -10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 0.02px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-right: 20px;
+}

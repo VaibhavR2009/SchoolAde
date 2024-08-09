@@ -1,0 +1,70 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#back-button {
+    height: 50px;
+    width: 100px;
+    font-size: large;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+    background-color: rgb(227, 116, 116);
+    color: rgb(255, 255, 255);
+    border: 0cm;
+    cursor: pointer;
+}
+#back-button:hover {
+    height: 50px;
+    width: 100px;
+    font-size: x-large;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+.login-info {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    z-index: 15;
+    top: 33%;
+    left: 45%;
+    margin: -100px 0 0 -150px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(220, 87, 87, 0.4); /* Black w/opacity/see-through */
+}
+
+html {
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+#google {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid blue;
+    transition: 0.5s;
+}
+#google:hover {
+    height: 51px;
+    width: 401px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+#image {
+    height: 50px;
+    width: 70px;
+}
+::selection {
+    color:blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.469);
+}

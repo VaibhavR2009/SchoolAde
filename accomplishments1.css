@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    background-color: rgba(0, 0, 0, 0.95);
+    color:white;
+    font-family: "Poppins";
+    overflow-x: hidden;
+    font-size: 20px;
+}
+title {
+    font-family: "Poppins";
+}
+#header {
+    background-image: linear-gradient(45deg, rgb(50, 50, 50), rgb(85, 76, 76));
+    position: relative;
+    height:100px;
+    text-align: center;
+    padding-top: 40px;
+    user-select: none;
+    cursor:wait;
+}
+#back {
+    position: fixed;
+    padding-left: 10px;
+    margin-top: -35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    padding-top:10px;
+    padding-bottom:4px;
+    padding-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 40px;
+    transition: 2s;
+}
+#back:hover{
+    background-color: white;
+}
+#backImg {
+    height:30px;
+}
+#newAccText {
+    color:rgb(2, 2, 30);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#open {
+    z-index: 30;
+    height:101vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    animation: transition2 0.3s forwards;
+}
+@keyframes transition2 {
+    0% {
+        opacity: 1;
+        transform: rotateX(-10deg);
+        transition: ease-in;
+    }
+    50% {
+        opacity: 0.5;
+        transition: ease-in;
+    }
+    100% {
+        opacity:0;
+        transform:rotateX(0);
+        background-color: rgb(0, 0, 0);
+        transition: ease-in;
+        z-index: -1;
+    }
+}
+::selection {
+    color:blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.469);
+}
+#newAcc {
+    background-color: rgba(22, 25, 39, 0.885);
+    height:200px;
+    width:200px;    
+    margin-left: -9px;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding:10px;
+    transition: 0.5s;
+}
+#newAcc:hover {
+    background-color:rgba(90, 95, 119, 0.885); ;
+}
+#text {
+    color:white;
+}
+#add {
+    height:200px;
+}
+#textBox {
+    color:white;
+    background-color: rgb(49, 48, 48);
+    height:90px;
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius: 8px;
+    padding:10px;
+    overflow-y: scroll;
+}
+#textInput {
+    background-color: rgb(52, 48, 48);
+    margin-left: -10px;
+    padding-top: 0px;
+    border-radius: 10px;
+    padding-left:30px;
+    padding-right:30px;
+    user-select: none;
+    cursor: crosshair;
+    position: absolute;
+    width:800px;
+    left: 50%;
+    transform: translate(-50%, -97%);
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color:rgb(28, 27, 27) rgb(57, 57, 57);
+}
+#done {
+    background-color: rgb(3, 97, 33);
+    padding: 10px;
+    cursor:pointer;
+    user-select: none;
+    position:relative;
+    left:43%;
+}
+#cancel {
+    padding:10px;
+    background-color: rgb(63, 3, 3);
+    cursor:pointer;
+    user-select: none;
+    left:43%;
+    position: relative;
+}
+#accAdd {
+    margin-top: 20px;
+    margin-left: -9px;
+    height:200px;
+    width:200px;
+    color:white;
+    background-color: rgb(49, 48, 48);
+    overflow-y: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 10px solid rgb(48, 41, 41);
+}
+#accs {
+    justify-content: space-between;
+}
+
+#deleteIcon {
+    height:30px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    left:40%;
+    margin-bottom: -50px;
+}
+#editAcc {
+    background-color: rgb(52, 48, 48);
+    margin-left: -10px;
+    padding-top: 0px;
+    border-radius: 10px;
+    padding-left:30px;
+    padding-right:30px;
+    user-select: none;
+    cursor: crosshair;
+    position: absolute;
+    width:800px;
+    height:220px;
+    transform: translate(28%, -100%);
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color:rgb(28, 27, 27) rgb(57, 57, 57);
+}
+#done1 {
+    background-color: rgb(3, 97, 33);
+    padding: 10px;
+    cursor:pointer;
+    user-select: none;
+    position:relative;
+    left:43%;
+    margin-bottom: 90px;
+    font-size: 15px;
+}
+#cancel1 {
+    padding:10px;
+    background-color: rgb(63, 3, 3);
+    cursor:pointer;
+    user-select: none;
+    font-size: 15px;
+    left:43%;
+    position: relative;
+}
+#textBox1 {
+    margin-top: -20px;
+    color:white;
+    background-color: rgb(49, 48, 48);
+    height:90px;
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius: 8px;
+    padding:10px;
+    overflow-y: scroll;
+}
