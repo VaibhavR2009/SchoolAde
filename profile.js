@@ -12,6 +12,10 @@ const firebaseConfig = {
     appId: "1:1056286679952:web:2885df18d2bdea50948915",
     measurementId: "G-NNXRE6P1XS"
 };
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    window.location.href="app.html";
+});
 const app = initializeApp(firebaseConfig);
 const auth= getAuth();
 const name1 = localStorage.getItem("name");
