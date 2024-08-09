@@ -3,6 +3,9 @@ dropdownInside.style.display="none";
 const dropdownToggle = document.getElementById("dropdownIcon");
 const dropdownToggle1 = document.getElementById("features");
 const resumeManager = document.getElementById("Rheader");
+window.addEventListener('beforeunload', function (e) {
+    localStorage.remove("open");
+});
 dropdownToggle.addEventListener("click", ()=>{
     if (localStorage.getItem("open")!=="open") {
         dropdownInside.style.display="block";
