@@ -11,6 +11,10 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
         appId: "1:1056286679952:web:2885df18d2bdea50948915",
         measurementId: "G-NNXRE6P1XS"
     };
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    window.location.href="app.html";
+});
     function writeData(list) {
       const db = getDatabase();
       const reference = ref(db, 'users/'+ localStorage.getItem("loggedInUserId"));
